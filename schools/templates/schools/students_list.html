@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+
+{% block title %}
+    students-list
+{% endblock %}
+
+{% block content %}
+    <h1>Students Information</h1>
+    <hr>
+    {% for student in students %}
+        <h3>{{ student.first_name }} : {{ student.mark }}</h3>
+    {% endfor %}
+
+{% endblock %}

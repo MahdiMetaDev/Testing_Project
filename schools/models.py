@@ -12,4 +12,4 @@ class Student(models.Model):
     ]
     first_name = models.CharField(max_length=100, choices=DEFAULT_DISPLAY)
     last_name = models.CharField(max_length=100, choices=DEFAULT_DISPLAY)
-    mark = models.CharField(choices=MARK_CHOICES)
+    mark = models.CharField(max_length=50, choices=MARK_CHOICES)
